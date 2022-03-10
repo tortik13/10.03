@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect
-from data import db_session
+from data import db_session, jobs_api
 from data.users import User
 from data.jobs import Jobs
 from data.forms import RegisterForm, LoginForm, WorksForm
