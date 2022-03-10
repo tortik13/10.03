@@ -17,7 +17,7 @@ def get_jobs():
     jobs = db_sess.query(Jobs).all()
     return jsonify(
         {
-            'news':
+            'jobs':
                 [item.to_dict(only=('job', 'work_size', 'collaborators'))
                  for item in jobs]
         }
